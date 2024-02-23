@@ -9,11 +9,8 @@ import {
 } from './Timer.styled';
 
 const Timer = () => {
-  // const today = new Date();
   const finishTimer = Date.now() + 10000;
-  // finishTimer.setDate(today.getDate() + 2);
-  // const finishTimer = today.setDate(today.getDate() + 2);
-  // console.log(finishTimer)
+  
   return (
     <Wrapper>
       <InfoTimerGo>
