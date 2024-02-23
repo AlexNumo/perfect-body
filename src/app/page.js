@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 import Header from "@/Components/Header/Header";
 import Timer from "@/Components/Timer/Timer";
 import {
