@@ -1,5 +1,4 @@
 'use client'
-import Image from "next/image";
 import logo from '../../../public/logo/logo.png';
 import {
   Wrapper,
@@ -15,7 +14,7 @@ const Header = () => {
         <a
           href='/'
         >
-          <Image
+          <img
             width={92}
             height={30}
             src={logo}
