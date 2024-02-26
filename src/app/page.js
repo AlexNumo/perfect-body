@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import store from "@/Redux/store";
 import Menu from "@/Components/Menu/Menu";
 import PhotoSection from "@/Components/PhotoSection/PhotoSection";
-import Participate from "@/Components/Participate/participate";
+import Participate from "@/Components/Participate/Participate";
 import "./globals.css";
 
 import {
