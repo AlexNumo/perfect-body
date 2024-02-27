@@ -1,11 +1,14 @@
 'use client'
 import Header from "@/Components/Header/Header";
-import Timer from "@/Components/Timer/Timer";
+import Timer from "@/Page/Timer/Timer";
 import { Provider } from 'react-redux';
 import store from "@/Redux/store";
 import Menu from "@/Components/Menu/Menu";
-import PhotoSection from "@/Components/PhotoSection/PhotoSection";
-import Participate from "@/Components/Participate/Participate";
+import PhotoSection from "@/Page/PhotoSection/PhotoSection";
+import Participate from "@/Page/Participate/Participate";
+import Unique from "@/Page/Unique/Unique";
+import VideoSection from "@/Page/VideoSection/VideoSection";
+import Tickets from "@/Page/Tickets/Tickets";
 import "./globals.css";
 
 import {
@@ -18,9 +21,12 @@ export default function Home() {
       <Provider store={store}>
         <Header />
         <Timer />
-        <PhotoSection/>
+        <PhotoSection />
         <Menu />
-        <Participate/>
+        <Participate />
+        <Unique />
+        <VideoSection />
+        <Tickets/>
       </Provider>
     </Wrapper>
   );
