@@ -1,6 +1,9 @@
 import {
-  Wrapper
+  Wrapper,
+  PriceWrapper,
+  BuyWrapper
 } from './Tickets.styled';
+import PayBTN from "@/Components/PayBTN/PayBTN";
 
 const Tickets = () => {
   const dataTickets = {
@@ -26,32 +29,57 @@ const Tickets = () => {
       18: 'Відео як роби вакуум ',
     },
     light: {
-      0:'Індивідуальний план харчування',
-      1:'Підтримка кураторів та однодумців в чаті',
-      2:'12 функіональних тренувань для дому',
-      3:'Постійна присутність Sandrochka_strong в чатах',
-      4:'Відео розтяжки після тренування',
-      5:'Рецепти корисних десертів',
-      6:'Відео Рецепти',
+      0: 'Індивідуальний план харчування',
+      1: 'Підтримка кураторів та однодумців в чаті',
+      2: '12 функіональних тренувань для дому',
+      3: 'Постійна присутність Sandrochka_strong в чатах',
+      4: 'Відео розтяжки після тренування',
+      5: 'Рецепти корисних десертів',
+      6: 'Відео Рецепти',
     }
+  };
+
+const price = {
+  vip: {
+    old: '4600',
+    new: '2400',
+    currency: 'грн'
+  },
+  light: {
+    old: '1700',
+    new: '888',
+    currency: 'грн'
   }
+}
   return (
     <>
       <Wrapper>
         <h3>VIP пакет</h3>
-        {dataTickets.vip && Object.values(dataTickets.vip).map((item, index) => (
-          <li key={index}>
-            {item}
-          </li>
-        ))}
+        <ul>
+          {dataTickets.vip && Object.values(dataTickets.vip).map((item, index) => (
+            <li key={index}>
+              {item}
+            </li>
+          ))}
+        </ul>
+        <PriceWrapper>
+          {price.vip && Object.values(price.vip).map((item, index) => (
+            <p key={index}>{item.price}</p>
+          ))}
+        </PriceWrapper>
+        <BuyWrapper>
+          <PayBTN/>
+        </BuyWrapper>
         </Wrapper>
         <Wrapper>
         <h3>Light пакет</h3>
-        {dataTickets.light && Object.values(dataTickets.light).map((item, index) => (
-          <li key={index}>
-            {item}
-          </li>
-        ))}
+        <ul>
+          {dataTickets.light && Object.values(dataTickets.light).map((item, index) => (
+            <li key={index}>
+              {item}
+            </li>
+          ))}
+        </ul>
       </Wrapper>
     </>
   )

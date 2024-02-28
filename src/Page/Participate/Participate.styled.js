@@ -1,6 +1,5 @@
 import styled, { keyframes } from "styled-components";
 
-// Створення ключової анімації пульсації
 const pulse = keyframes`
   0% {
     transform: scale(1);
@@ -21,6 +20,7 @@ export const WrapperBTN = styled.div`
   text-transform: uppercase;
   margin-right: 40px;
   margin-bottom: 40px;
+  z-index: 99;
 `;
 
 export const BTN = styled.button`
