@@ -1,7 +1,8 @@
 import {
   Wrapper,
   PriceWrapper,
-  BuyWrapper
+  BuyWrapper,
+  SaleWrapper
 } from './Tickets.styled';
 import PayBTN from "@/Components/PayBTN/PayBTN";
 
@@ -39,18 +40,20 @@ const Tickets = () => {
     }
   };
 
-const price = {
-  vip: {
-    old: '4600',
-    new: '2400',
-    currency: 'грн'
-  },
-  light: {
-    old: '1700',
-    new: '888',
-    currency: 'грн'
-  }
-}
+  const price = {
+    vip: {
+      old: '4600',
+      new: '2400',
+      currency: 'грн'
+    },
+    light: {
+      old: '1700',
+      new: '888',
+      currency: 'грн'
+    }
+  };
+
+
   return (
     <>
       <Wrapper>
@@ -63,23 +66,35 @@ const price = {
           ))}
         </ul>
         <PriceWrapper>
-          {price.vip && Object.values(price.vip).map((item, index) => (
-            <p key={index}>{item.price}</p>
-          ))}
+          <p>{price.vip.old} {price.vip.currency}</p>
+          <p>{price.vip.new} {price.vip.currency}</p>
         </PriceWrapper>
         <BuyWrapper>
-          <PayBTN/>
+          <PayBTN
+            oldPrice={price.vip.old}
+            newPrice={price.vip.new}
+          />
         </BuyWrapper>
         </Wrapper>
         <Wrapper>
         <h3>Light пакет</h3>
         <ul>
-          {dataTickets.light && Object.values(dataTickets.light).map((item, index) => (
+          {dataTickets.vip && Object.values(dataTickets.vip).map((item, index) => (
             <li key={index}>
               {item}
             </li>
           ))}
         </ul>
+        <PriceWrapper>
+          <p>{price.light.old} {price.light.currency}</p>
+          <p>{price.light.new} {price.light.currency}</p>
+        </PriceWrapper>
+        <BuyWrapper>
+          <PayBTN
+            oldPrice={price.light.old}
+            newPrice={price.light.new}
+          />
+        </BuyWrapper>
       </Wrapper>
     </>
   )

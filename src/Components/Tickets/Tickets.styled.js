@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* justify-content: start; */
+  justify-content: space-between;
   align-items: center;
   border: 1px solid #ffffff;
   background-color: var(--background-color-section);
@@ -13,10 +13,12 @@ export const Wrapper = styled.div`
   margin-bottom: 10px;
   margin-top: 10px;
   padding: 5px;
-  h3{
+  h3 {
     font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
-  ul{
+  ul {
     list-style-type: circle;
     padding-left: 25px;
     padding-right: 15px;
@@ -46,7 +48,6 @@ export const PriceWrapper = styled.div`
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  /* margin: 15px 0; */
   :first-child{
     text-decoration: line-through;
     text-decoration-thickness: 1px;
@@ -59,9 +60,10 @@ export const PriceWrapper = styled.div`
 `;
 
 export const BuyWrapper = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 15px 0;
+  margin-top: auto;
 `;
