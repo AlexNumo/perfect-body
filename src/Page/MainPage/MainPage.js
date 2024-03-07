@@ -11,7 +11,9 @@ import VideoSection from "@/Components/VideoSection/VideoSection";
 import Tickets from "@/Components/Tickets/Tickets";
 import Prize from "@/Components/Prize/Prize";
 import Information from "@/Components/Information/Information";
-// import Carousel from "@/Components/Carousel/Carousel";
+import Carousel from "@/Components/Carousel/Carousel";
+import Food from "@/Components/Food/Food";
+import Refund from "@/Components/Refund/Refund";
 
 const MainPage = () => {
   return (
@@ -24,8 +26,10 @@ const MainPage = () => {
       <VideoSection />
       <Tickets />
       <Prize />
-      <Information />
-      {/* <Carousel/> */}
+      <Information/>
+      <Carousel />
+      <Food />
+      <Refund/>
       <Menu />
     </>
   )

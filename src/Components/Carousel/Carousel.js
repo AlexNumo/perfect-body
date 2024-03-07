@@ -7,7 +7,10 @@ import Photo_3 from '../../../public/food/photo_3.jpeg';
 import Photo_4 from '../../../public/food/photo_4.jpeg';
 import Photo_5 from '../../../public/food/photo_5.jpeg';
 import Photo_6 from '../../../public/food/photo_6.jpeg';
-
+import {
+  WrapperImage,
+  WrapperCarousel
+} from './Carousel.styled';
 
 const Carousel = () => {
   const responsive = {
@@ -17,65 +20,84 @@ const Carousel = () => {
   };
   const handleDragStart = (e) => e.preventDefault();
   const items = [
-    <div style={{height: '150px', overflow: 'auto'}}>
-    <Image
-      max-width='100%'
-      max-height='100%'
-      src={Photo_1}
-      onDragStart={handleDragStart}
-      role="presentation"
-      /></div>,
-    <div style={{height: '150px'}}>
-    <Image
-      max-width='100%'
-      max-height='100%'
-      src={Photo_2}
-      onDragStart={handleDragStart}
-      role="presentation"
-    /></div>,
-    <div style={{height: '150px'}}>
-    <Image
-      max-width='100%'
-      max-height='100%'
-      src={Photo_3}
-      onDragStart={handleDragStart}
-      role="presentation"
-      /></div>,
-    <div style={{height: '150px'}}>
-    <Image
-      max-width='100%'
-      max-height='100%'
-      src={Photo_5}
-      onDragStart={handleDragStart}
-      role="presentation"
-      /></div>,
-    <div style={{height: '150px'}}>
-    <Image
-      max-width='100%'
-      max-height='100%'
-      src={Photo_6}
-      onDragStart={handleDragStart}
-      role="presentation"
-      /></div>,
-
-  ];
-  // const items = [
-  //   <div className="item" data-value="1">1</div>,
-  //   <div className="item" data-value="2">2</div>,
-  //   <div className="item" data-value="3">3</div>,
-  //   <div className="item" data-value="4">4</div>,
-  //   <div className="item" data-value="5">5</div>,
-  // ];
-  return (
-    <div style={{width: '100%', height: '100px'}} className="carousel-container">
-       <AliceCarousel
-        mouseTracking
-        items={items}
-        // paddingLeft={50}
-        // paddingRight={50}
-        responsive={responsive}
+    <WrapperImage>
+      <Image
+        src={Photo_1}
+        onDragStart={handleDragStart}
+        layout="fill"
+        objectFit="cover"
+        alt='photo food'
+        sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
       />
-    </div>
+    </WrapperImage>,
+    <WrapperImage>
+      <Image
+        src={Photo_2}
+        onDragStart={handleDragStart}
+        layout="fill"
+        objectFit="cover"
+        alt='photo food'
+        sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
+      />
+    </WrapperImage>,
+    <WrapperImage>
+      <Image
+        src={Photo_3}
+        onDragStart={handleDragStart}
+        layout="fill"
+        objectFit="cover"
+        alt='photo food'
+        sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
+      />
+    </WrapperImage>,
+    <WrapperImage>
+      <Image
+        src={Photo_4}
+        onDragStart={handleDragStart}
+        layout="fill"
+        objectFit="cover"
+        alt='photo food'
+        sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
+      />
+    </WrapperImage>,
+    <WrapperImage>
+      <Image
+        src={Photo_5}
+        onDragStart={handleDragStart}
+        layout="fill"
+        objectFit="cover"
+        alt='photo food'
+        sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
+      />
+    </WrapperImage>,
+    <WrapperImage>
+      <Image
+        src={Photo_6}
+        onDragStart={handleDragStart}
+        layout="fill"
+        objectFit="cover"
+        alt='photo food'
+        sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
+      />
+    </WrapperImage>
+  ];
+
+  return (
+    <WrapperCarousel>
+      <AliceCarousel
+        animationDuration={10000}
+        animationType='fadeout'
+        autoPlay={true}
+        autoPlayInterval={1}
+        autoPlayStrategy='none'
+        items={items}
+        responsive={responsive}
+        disableButtonsControls={true}
+        disableDotsControls={true}
+        infinite={true}
+        controlsStrategy='responsive'
+      />
+    </WrapperCarousel>
   );
 };
 

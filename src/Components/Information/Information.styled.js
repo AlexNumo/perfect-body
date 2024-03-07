@@ -13,9 +13,6 @@ export const Wrapper = styled.div`
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 5px;
-  overflow: hidden;
-  /* margin-left: 25px; */
-  overflow: auto;
   h3{
     font-size: 29px;
     margin-top: 10px;
