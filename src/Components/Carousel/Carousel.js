@@ -20,7 +20,7 @@ const Carousel = () => {
   };
   const handleDragStart = (e) => e.preventDefault();
   const items = [
-    <WrapperImage>
+    <WrapperImage key={1}>
       <Image
         src={Photo_1}
         onDragStart={handleDragStart}
@@ -30,7 +30,7 @@ const Carousel = () => {
         sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
       />
     </WrapperImage>,
-    <WrapperImage>
+    <WrapperImage key={2}>
       <Image
         src={Photo_2}
         onDragStart={handleDragStart}
@@ -40,7 +40,7 @@ const Carousel = () => {
         sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
       />
     </WrapperImage>,
-    <WrapperImage>
+    <WrapperImage key={3}>
       <Image
         src={Photo_3}
         onDragStart={handleDragStart}
@@ -50,7 +50,7 @@ const Carousel = () => {
         sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
       />
     </WrapperImage>,
-    <WrapperImage>
+    <WrapperImage key={4}>
       <Image
         src={Photo_4}
         onDragStart={handleDragStart}
@@ -60,7 +60,7 @@ const Carousel = () => {
         sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
       />
     </WrapperImage>,
-    <WrapperImage>
+    <WrapperImage key={5}>
       <Image
         src={Photo_5}
         onDragStart={handleDragStart}
@@ -70,7 +70,7 @@ const Carousel = () => {
         sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
       />
     </WrapperImage>,
-    <WrapperImage>
+    <WrapperImage key={6}>
       <Image
         src={Photo_6}
         onDragStart={handleDragStart}
