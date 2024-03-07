@@ -26,7 +26,7 @@ const Carousel = () => {
         onDragStart={handleDragStart}
         layout="fill"
         objectFit="cover"
-        alt='photo food'
+        alt=''
         sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
       />
     </WrapperImage>,
@@ -36,7 +36,7 @@ const Carousel = () => {
         onDragStart={handleDragStart}
         layout="fill"
         objectFit="cover"
-        alt='photo food'
+        alt=''
         sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
       />
     </WrapperImage>,
@@ -46,7 +46,7 @@ const Carousel = () => {
         onDragStart={handleDragStart}
         layout="fill"
         objectFit="cover"
-        alt='photo food'
+        alt=''
         sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
       />
     </WrapperImage>,
@@ -56,7 +56,7 @@ const Carousel = () => {
         onDragStart={handleDragStart}
         layout="fill"
         objectFit="cover"
-        alt='photo food'
+        alt=''
         sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
       />
     </WrapperImage>,
@@ -66,7 +66,7 @@ const Carousel = () => {
         onDragStart={handleDragStart}
         layout="fill"
         objectFit="cover"
-        alt='photo food'
+        alt=''
         sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
       />
     </WrapperImage>,
@@ -76,7 +76,7 @@ const Carousel = () => {
         onDragStart={handleDragStart}
         layout="fill"
         objectFit="cover"
-        alt='photo food'
+        alt=''
         sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
       />
     </WrapperImage>

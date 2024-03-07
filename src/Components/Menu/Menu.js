@@ -49,6 +49,7 @@ const Menu = () => {
       document.removeEventListener("mousedown", handleCloseMenu);
       document.removeEventListener("keydown", handleEscKeyPress);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showMenu]);
 
   // useEffect(() => {
