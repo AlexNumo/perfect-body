@@ -14,6 +14,9 @@ import Information from "@/Components/Information/Information";
 import Carousel from "@/Components/Carousel/Carousel";
 import Food from "@/Components/Food/Food";
 import Refund from "@/Components/Refund/Refund";
+import PhotoUsers from "@/Components/PhotoUsers/PhotoUsers";
+import PopularQuestion from "@/Components/PopularQuestion/PopularQuestion";
+import Footer from "@/Components/Footer/Footer";
 
 const MainPage = () => {
   return (
@@ -21,7 +24,7 @@ const MainPage = () => {
       <Header />
       <Timer />
       <PhotoSection />
-      {/* <Participate /> */}
+      <Participate />
       <Unique />
       <VideoSection />
       <Tickets />
@@ -29,7 +32,10 @@ const MainPage = () => {
       <Information/>
       <Carousel />
       <Food />
-      <Refund/>
+      <Refund />
+      <PhotoUsers/>
+      <PopularQuestion/>
+      <Footer/>
       <Menu />
     </>
   )

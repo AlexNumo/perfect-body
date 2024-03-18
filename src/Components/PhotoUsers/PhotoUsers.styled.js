@@ -14,25 +14,19 @@ export const Wrapper = styled.div`
   margin-bottom: 10px;
   padding: 5px;
   h3{
-    font-size: 16px;
+    font-size: 22px;
     margin-top: 10px;
     margin-bottom: 10px;
-    /* margin-left: 15px; */
-  }
-  p{
-    margin-left: 35px;
-    margin-bottom: 15px;
   }
   @media (min-width: 769px) {
     width: calc(100% - 100px);
   }
 `;
 
-export const ContainerStyleIMG = styled.div`
+export const WrapperImage = styled.div`
   position: relative;
-  width: 320px;
-  height: 180px;
-  border-radius: var(--border-radius);
+  width: 100%;
+  height: 390px;
   img {
     position: absolute;
     top: 0;
@@ -42,4 +36,18 @@ export const ContainerStyleIMG = styled.div`
     object-fit: cover;
     border-radius: var(--border-radius);
   }
+  @media (min-width: 769px) {
+    width: 250px;
+    height: 370px;
+  }
+  @media (min-width: 1024px) {
+    width: 300px;
+    height: 470px;
+  }
+`;
+
+export const WrapperCarousel = styled.div`
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
 `;
