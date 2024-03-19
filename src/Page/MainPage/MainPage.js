@@ -22,7 +22,7 @@ const MainPage = () => {
   return (
     <>
       <Header />
-      <Timer />
+      {/* <Timer />
       <PhotoSection />
       <Participate />
       <Unique />
@@ -34,8 +34,8 @@ const MainPage = () => {
       <Food />
       <Refund />
       <PhotoUsers/>
-      <PopularQuestion/>
-      <Footer/>
+      <PopularQuestion/> */}
+      <Footer />
       <Menu />
     </>
   )
