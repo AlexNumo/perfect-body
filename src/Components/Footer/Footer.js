@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import logo from '../../../public/logo/logo_white.png';
 import { GrInstagram } from "react-icons/gr";
 import { LiaTelegram } from "react-icons/lia";
@@ -23,90 +24,51 @@ const Footer = () => {
   const linkPrograms = '/programs';
   const linkSupport = '/support';
   const linkPolcon = '/polcon';
-  const linkUmov = '/umov';
+  const linkUmov = '/conditions';
   const linkNumber = '+380981058240';
   const linkMail = 'ars.fit.studio@gmail.com';
 
   return (
     <Wrapper>
       <WrapperLogo>
-        <a
-          href='/'
-        >
-          <ImageLogo
-            src={logo}
-            alt='logo'
-          />
-        </a>
+        <Link href='/'>
+            <ImageLogo
+              src={logo}
+              alt='logo'
+            />
+        </Link>
       </WrapperLogo>
       <p>Унікальная платформа де ти знайдеш все для отримання здорового тіла та духу</p>
-      <PersonalCabinetLink
-        href='/'
-      >
-        Особистий кабінет
-      </PersonalCabinetLink>
+      <PersonalCabinetLink href='/'>Особистий кабінет</PersonalCabinetLink>
       <WrapperLink>
-        <a href={linkExpert}>
-          Експерти
-        </a>
-        <a href={linkChallenge}>
-          Челендж
-        </a>
-        <a href={linkPrograms}>
-          Програми
-        </a>
-        <a href={linkSupport}>
-          Технічна підтримка
-        </a>
+        <Link href={linkExpert}>Експерти</Link>
+        <Link href={linkChallenge}>Челендж</Link>
+        <Link href={linkPrograms}>Програми</Link>
+        <Link href={linkSupport}>Технічна підтримка</Link>
       </WrapperLink>
       <WrapperLinkSocial>
-        <ImageMastercard
-          src={Mastercard}
-          alt=''
-        />
+        <ImageMastercard src={Mastercard} alt='' />
         <div>
-          <a href={linkInstagram}
-            target="_blank">
-          <GrInstagram
-            size={45}
-            />
+          <a href={linkInstagram} target="_blank">
+            <GrInstagram size={45} />
           </a>
         </div>
         <div>
-          <a href={linkTelegram}
-            target="_blank">
-          <LiaTelegram
-            size={45}
-            />
+          <a href={linkTelegram} target="_blank">
+            <LiaTelegram size={45} />
           </a>
         </div>
         <div>
-          <a
-            href={linkMaps}
-            target="_blank">
-          <SiGooglemaps
-            size={45}
-            />
+          <a href={linkMaps} target="_blank">
+            <SiGooglemaps size={45} />
           </a>
         </div>
       </WrapperLinkSocial>
       <WrapperLinkInfo>
-        <a
-          href={linkPolcon}
-          target="_blank">
-          Політика конфіденційності 
-        </a>
-        <a
-          href={linkUmov}
-          target="_blank">
-          Правила і умови
-        </a>
-        <a href={`tel:${linkNumber}`}>
-          {linkNumber}
-        </a>
-        <a href={`mailto:${linkMail}`}>
-          {linkMail}
-        </a>
+        <Link href={linkPolcon}>Політика конфіденційності</Link>
+        <Link href={linkUmov}>Правила і умови</Link>
+        <a href={`tel:${linkNumber}`}>{linkNumber}</a>
+        <a href={`mailto:${linkMail}`}>{linkMail}</a>
       </WrapperLinkInfo>
     </Wrapper>
   )
