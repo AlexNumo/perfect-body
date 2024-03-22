@@ -3,12 +3,12 @@
 import Header from "@/Components/Header/Header";
 import Menu from "@/Components/Menu/Menu";
 import Footer from "@/Components/Footer/Footer";
-import { Wrapper } from './pages.styled';
-
+// import { Wrapper } from './pages.styled';
+import "./pages.css";
 const CustomErrorPage = ({ statusCode }) => {
   console.log(statusCode)
   return (
-    <Wrapper>
+    <div className="wrapper">
       <Header />
       <div>
         <h1>
@@ -21,7 +21,7 @@ const CustomErrorPage = ({ statusCode }) => {
       </div>
       <Footer />
       <Menu />
-    </Wrapper>
+    </div>
   );
 };
 
