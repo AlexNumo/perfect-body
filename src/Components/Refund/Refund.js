@@ -8,7 +8,7 @@ import {
 } from './Refund.styled';
 
 const Refund = () => {
-
+  const linkTake = 'https://docs.google.com/forms/d/e/1FAIpQLSfEEBfrFO9F7eD7uTBGdnjORvt3eo_r8sIk2VMQCsUnX1pEBQ/viewform?usp=sf_link';
   const handleClick = (e) => {
     console.log(e.target.value);
   };
@@ -26,6 +26,7 @@ const Refund = () => {
         />
       </ContainerStyleIMG>
       <Button
+        link={linkTake}
         nameBTN='Умови повернення'
         onClick={handleClick}
       />

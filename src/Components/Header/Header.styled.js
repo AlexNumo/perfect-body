@@ -45,8 +45,11 @@ export const WrapperMenu = styled.div`
 `;
 
 export const ImageLogo = styled(Image)`
-  width: 92px;
-  height: 30px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  /* width: 92px;
+  height: 30px; */
 `;
 
 export const NavigateStyle = styled.nav`

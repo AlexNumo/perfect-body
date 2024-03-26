@@ -2,7 +2,8 @@ import { IoClose } from "react-icons/io5";
 import { useSelector, useDispatch } from 'react-redux';
 import { setShowMenu } from '@/Redux/menuReducer';
 import Image from "next/image";
-import logo_white from '../../../public/logo/logo_white.png';
+// import logo_white from '../../../public/logo/logo_white.png';
+import logo2 from '../../../public/logo/logo_ars.jpeg';
 import { useRef, useEffect } from 'react';
 import {
   WrapperMenu,
@@ -15,8 +16,13 @@ import {
 const Menu = () => {
   const dispatch = useDispatch();
   const showMenu = useSelector((state) => state.menu.showMenu);
-
   const menuRef = useRef();
+
+  const linkExpert = '/expert';
+  const linkChallenge = '/challenge';
+  const linkPrograms = '/programs';
+  const linkCabinet = '/cabinet';
+
   // const [isAnimating, setIsAnimating] = useState(false);
 
   const handleShowMenu = () => {
@@ -70,9 +76,10 @@ const Menu = () => {
               />
             </ClosePosition>
             <Image
-              width={120}
-              height={38}
-              src={logo_white}
+              width={70}
+              height={70}
+              style={{borderRadius: '50%'}}
+              src={logo2}
               alt='logo white'
             />
             <NavigateStyle>
@@ -86,21 +93,21 @@ const Menu = () => {
                 </li>
                 <li>
                   <a
-                    href='/'
+                    href={linkExpert}
                   >
                     Експерти
                   </a>
                 </li>
                 <li>
                   <a
-                    href='/'
+                    href={linkPrograms}
                   >
                     Програми
                   </a>
                 </li>
                 <li>
                   <a
-                    href='/'
+                    href={linkChallenge}
                   >
                     Челендж
                   </a>
@@ -109,7 +116,7 @@ const Menu = () => {
             </NavigateStyle>
             <Cabinet>
               <a
-                href='/'
+                href={linkCabinet}
               >
                 Особистий кабінет
               </a>

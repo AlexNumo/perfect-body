@@ -7,6 +7,7 @@ import {
 import Button from '../Button/Button';
 
 const Information = () => {
+  const linkTake = 'https://docs.google.com/forms/d/e/1FAIpQLSfEEBfrFO9F7eD7uTBGdnjORvt3eo_r8sIk2VMQCsUnX1pEBQ/viewform?usp=sf_link';
   const handleClick = (e) => { 
     console.log(e.target)
   }
@@ -51,6 +52,7 @@ const Information = () => {
         </InformationStyle>
       </WrapperListStyle>
       <Button
+        link={linkTake}
         nameBTN='Підібрати меню'
         onClick={handleClick}
       />

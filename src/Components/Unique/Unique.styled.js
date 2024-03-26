@@ -21,7 +21,7 @@ export const Wrapper = styled.div`
 export const ListUnique = styled.ul`
   li {
     margin: 10px 25px;
-    background-color: var(--main-color);
+    background: var(--main-color);
     border-radius: 12px;
     color: #ffffff;
   }

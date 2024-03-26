@@ -1,6 +1,7 @@
 'use client'
 // import { useState } from 'react';
-import logo from '../../../public/logo/logo.png';
+// import logo from '../../../public/logo/logo.png';
+import logo2 from '../../../public/logo/logo_ars.jpeg';
 import {
   Wrapper,
   WrapperLogo,
@@ -33,7 +34,7 @@ const Header = () => {
           href='/'
         >
           <ImageLogo
-            src={logo}
+            src={logo2}
             alt='logo'
           />
         </a>

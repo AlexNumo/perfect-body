@@ -27,11 +27,12 @@ export const WrapperMenu = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
+  z-index: 99;
 `;
 
 export const MenuPosition = styled.div`
   position: fixed;
-  background-color: var(--main-color);
+  background: var(--main-color);
   color: #ffffff;
   width: 150px;
   height: 100%;

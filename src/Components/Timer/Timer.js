@@ -10,7 +10,7 @@ import {
 } from './Timer.styled';
 
 const Timer = () => {
-  const finishTimer = Date.now() + 1000000;
+  const finishTimer = new Date('April 1, 2024 00:00:00').getTime();
 
   // Власний renderer для Countdown
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
@@ -52,9 +52,9 @@ const Timer = () => {
   return (
     <Wrapper>
       <InfoTimerGo>
-        <p>COME ON - унікальний спортивний челендж для схуднення!</p>
+        <p>LETS GO - унікальний спортивний челендж для схуднення!</p>
         <Countdown date={finishTimer} renderer={renderer} />
-        <p>Старт 26 лютого</p>
+        <p>Старт 1 квітня</p>
       </InfoTimerGo>
     </Wrapper>
   )

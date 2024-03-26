@@ -36,8 +36,9 @@ export const WrapperLogo = styled.div`
 `;
 
 export const ImageLogo = styled(Image)`
-  width: 160px;
-  height: 51px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
 `;
 
 export const PersonalCabinetLink = styled.a`

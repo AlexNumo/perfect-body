@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import logo from '../../../public/logo/logo_white.png';
+// import logo from '../../../public/logo/logo_white.png';
+import logo2 from '../../../public/logo/logo_ars.jpeg';
 import { GrInstagram } from "react-icons/gr";
 import { LiaTelegram } from "react-icons/lia";
 import { SiGooglemaps } from "react-icons/si";
@@ -19,8 +20,9 @@ const Footer = () => {
   const linkMaps = 'https://www.google.com/maps/place/Ars+Fit+Studio/@48.4706957,35.0377097,17.5z/data=!4m6!3m5!1s0x40dbe30b31eae0ef:0xdf2ae76e37c38242!8m2!3d48.4710704!4d35.0387283!16s%2Fg%2F11l75d1ghg?hl=uk-UK&entry=ttu';
   const linkInstagram = 'https://www.instagram.com/arsfit_studio';
   const linkTelegram = 'https://t.me/Ars_Fit_Studio_bot';
+  const linkCabinet = '/cabinet';
   const linkExpert = '/expert';
-  const linkChallenge = '/challenge';
+  const linkTelegramBot = 'https://t.me/Test_ars_fit_bot';
   const linkPrograms = '/programs';
   const linkSupport = '/support';
   const linkPolcon = '/polcon';
@@ -33,16 +35,16 @@ const Footer = () => {
       <WrapperLogo>
         <Link href='/'>
             <ImageLogo
-              src={logo}
+              src={logo2}
               alt='logo'
             />
         </Link>
       </WrapperLogo>
       <p>Унікальная платформа де ти знайдеш все для отримання здорового тіла та духу</p>
-      <PersonalCabinetLink href='/'>Особистий кабінет</PersonalCabinetLink>
+      <PersonalCabinetLink href={linkCabinet}>Особистий кабінет</PersonalCabinetLink>
       <WrapperLink>
         <Link href={linkExpert}>Експерти</Link>
-        <Link href={linkChallenge}>Челендж</Link>
+        <Link href={linkTelegramBot} target="_blank">Telegram bot</Link>
         <Link href={linkPrograms}>Програми</Link>
         <Link href={linkSupport}>Технічна підтримка</Link>
       </WrapperLink>

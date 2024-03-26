@@ -1,6 +1,7 @@
 
 :root {
-  --main-color: #EB5824;
+  /* --main-color: #EB5824; */
+  --main-color: linear-gradient(90deg, #9b59b6, #d29de1);
   --main-font-family: 'Times New Roman', Times, serif;
   --main-font-size: 14px;
   --background-color-section: #ffffff;
@@ -11,6 +12,7 @@
 
 body {
   margin: 0;
+  background: var(--main-color);
 }
 
 p {

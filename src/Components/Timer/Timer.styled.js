@@ -37,7 +37,7 @@ export const WrapperTimer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: var(--main-color);
+  background: var(--main-color);
   border-radius: var(--border-radius);
   padding: 25px;
   color: #ffffff;

@@ -23,12 +23,12 @@ export const WrapperBTN = styled.div`
   z-index: 99;
 `;
 
-export const BTN = styled.button`
+export const LinkGoogleForm = styled.a`
   background-color: #000000;
   color: #ffffff;
   border: none;
-  padding: 15px 65px;
-  font-size: 18px;
+  padding: 15px 35px;
+  font-size: 15px;
   font-weight: 700;
   border-radius: 22px;
   animation: ${pulse} 2s infinite; /* Використання анімації пульсації */
