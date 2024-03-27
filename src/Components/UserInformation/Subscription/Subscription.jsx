@@ -131,9 +131,9 @@ const Subscription = () => {
         <>
         {nameSeasonTicket === "Безлімітний"
           ?
-          <p>"{nameSeasonTicket}"</p>
+          <p>&quot;{nameSeasonTicket}&quot;</p>
           :
-          <p>"{nameSeasonTicket}"
+          <p>&quot;{nameSeasonTicket}&quot;
             <span>&nbsp;({remainderSeasonTicket})</span>
           </p>}
         <div style={{ width: '50px', height: '50px', position: 'relative' }}>

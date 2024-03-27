@@ -64,7 +64,7 @@ const Settings = () => {
       <h3>Налаштування:</h3>
       <UserInformation>
         <div>
-          <p>Ім'я:</p>
+          <p>Ім&apos;я:</p>
           {formData.openChangeName ? (
             <InputStyle
               type="text"
